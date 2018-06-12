@@ -1,0 +1,28 @@
+<div class="container">
+    <div style="text-align:center">
+        <h1>
+            Formatter & Parser
+        </h1>
+    </div>
+    <div clas="row">
+        <div class="offset-4 col-4">
+            <form (ngSubmit)="submit()">
+                <div class="form-group">
+                    <label for="id">Id:</label>
+                    <input class="form-control" type="number" id="id" name="id" [(ngModel)]="customer.id" />
+                </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input nameConverter class="form-control" type="text" id="name" name="name" [(ngModel)]="customer.name" />
+                </div>
+                <div class=" form-group submit ">
+                    <button class="btn btn-primary btn-lg ">submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="offset-4 col-4 ">
+            {{message}}
+        </div>
+    </div>
+
+</div>
